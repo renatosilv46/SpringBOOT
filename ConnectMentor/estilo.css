@@ -1,0 +1,285 @@
+body{
+    background-color: 	#f3a158;
+    display: flexbox;
+    
+    
+}
+
+.retangulo{
+    background-color: white;
+    color: white;
+    border-radius: 20px;
+    padding-top: 200%;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 90%;
+   
+}
+
+h2{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;  
+    text-align: center;
+    display: flex;
+    transition: 0.9s;
+}
+nav a:hover{
+color: blue;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    margin-left: 350px;
+   
+  }
+  
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+nav{
+    display:flex;
+    position: absolute;
+}
+.navbar-brand{
+position: absolute;
+right: 125%;
+transform: translate(-50%,-50%);
+    
+}
+
+.menu{
+    position: absolute;
+    top: 70px;
+    bottom: 350px;
+    right: 120px;
+    right: 3%;
+    /*left: 220px;*/
+
+}
+.botaoAcessar{
+    background-color: #007bff;
+    color: white;
+    border-radius:50px;
+    padding-left: 20px;
+    padding-right:20px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    transition: 0.9s;
+}
+
+.botaoAcessar:hover{
+    background-color: #124265;
+    color: white;
+
+}
+
+.primeiroTexto{
+    position:absolute;
+    top: 45%;
+    left: 47%;
+    font-size:28px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.botaoConectar button{
+    background-color: white;
+    color: #124265;
+    border : 1px solid #124265;
+    border-radius: 15px;
+    padding-left: 38px ;
+    padding-right: 38px ;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    transition: 2s;
+}
+
+.botaoConectar button:hover{
+    background-color: #124265;
+    color: white;
+
+}
+
+.botaoCadastrar button{
+    background-color: white;
+    color: red;
+    border-radius:15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border : 1px solid red;
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    transition: 2s;
+
+}
+
+.botaoCadastrar button:hover{
+    color: white;
+    background-color: red;
+}
+
+.imagemHN{
+    width: 40px;
+    height: 20px;
+}
+.parcerias
+{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.traco{
+    
+    color: black;
+    border-width: 2px;
+    width: 500px;
+    position: absolute;
+    right: 20%;
+    left: 17%;
+    top: 90%;
+   
+
+  
+}
+
+.imagemHN{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    
+}
+
+.imageParc1{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+}
+.imageParc2{
+    position: absolute;
+    top: 92%;
+    left: 40%;
+}
+
+.imageParc3{
+    position: absolute;
+    top: 92%;
+    left: 50%;
+}
+
+.imageParc4{
+    position: absolute;
+    top: 92%;
+    left: 60%;
+}
+
+.imageMM{
+    position:absolute;
+    top: 32%;
+    left: -4%;
+    transform: translate(-50%,-50%);
+    transform: scaleX(-1);
+    transition: 2s;
+}
+.imageMM:hover{
+    opacity: 0.2;
+    }
+.iconeAzul{
+    position: absolute;
+    top: 29%;
+    left: -3%;
+    transform: translate(-50%, -50%);
+    transform: scaleX(-1);
+}
+
+.imgCadastra-se{
+    position: absolute;
+    top: 120%;
+    left: 7%;
+    transform: traslate(-50%, -50%);
+    transition: 2s;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.4);
+}
+
+
+.imagemMN{
+    position: absolute;
+    top: 106%;
+    left:65%;
+    
+}
+
+.imagemHN2{
+    position: absolute;
+    top: 170%;
+    left: 60%;
+    
+}
+
+.textoComunidade{
+    position: absolute;
+    top: 170%;
+    left: 57%;
+    font-size: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+}
+
+
+.iconePessoas{
+    position: absolute;
+    top: 230%;
+    left: 16%;
+ 
+    
+}
+
+.fundoTextoInterativo{
+    position: absolute;
+    top: 220%;
+    left: -1%;
+    margin-left: 30px;
+    margin-right: 50px;
+    padding: 1% 64% 20% 30%;
+    border: 2px solid #007bff;
+    background-color: #124265;
+    color: white;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+.textoInterativo{
+    position: absolute;
+    top: 230%;
+    left: 1%;
+    font-size: 23px;
+    color: white;
+
+}
+
+
+
+
+
