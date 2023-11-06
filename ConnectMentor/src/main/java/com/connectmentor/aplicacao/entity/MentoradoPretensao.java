@@ -12,13 +12,13 @@ import jakarta.persistence.Table;
 public class MentoradoPretensao {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-@Column(name = "idMentoradoPretensao")
+@Column(name = "id_mentorado_pretensao")
 private Long idMentoradoPretensao;
 @ManyToOne
-@JoinColumn(name = "idMentorado")
+@JoinColumn(name = "id_mentorado")
 private Mentorado mentorado;
 @ManyToOne
-@JoinColumn(name = "idPretensao")
+@JoinColumn(name = "id_pretensao")
 private Pretensao pretensao;
 //Constructors
 public MentoradoPretensao() {

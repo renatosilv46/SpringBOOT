@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   
+<head>
+    <a href="index" class="voltar-topo">
+        <i class="fas fa-arrow-left"></i>
+        </a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <title>Formulário</title>
+
+
+</head>
+
+<body>
+	
+	
+	<a href="/index" class="voltar-topo">
+    <i class="fas fa-home"></i>
+</a>
+    
+    <div class="container">
+        
+        
+        <div class="form-image">
+            <img src="../assets/mulher-morena-cadastro.png" alt="" weight="400px" height="auto">
+        </div>
+        <div class="form">
+            <form method="post" action="/mentorado/inserirMentorados">
+
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="login.html">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">CPF</label>
+                        <input id="lastname" type="text" name="cpf" placeholder="Digite seu cpf" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="genero" value="1">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="genero" value="2">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="genero" value="3">
+                            <label for="others">Outro</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="genero" value="4">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+        			</div>
+        			<div class="pdf"><br>
+                        <label for="pdfUpload">Foto</label>
+                        <input type="file" id="pdfUpload" name="foto">
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type"submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <style>
+        .voltar-topo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            background-color: rgb(204, 175, 8);
+            color: black;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 999;
+            }
+            
+            .voltar-topo i {
+            margin-right: 0;
+            }
+            
+            .voltar-topo:hover {
+            background-color: #0056b3;
+            }
+        </style>
+
+</body>
+
+
+</html>
