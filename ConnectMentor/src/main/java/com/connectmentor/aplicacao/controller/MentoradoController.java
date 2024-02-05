@@ -1,14 +1,13 @@
 package com.connectmentor.aplicacao.controller;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,7 +21,7 @@ import com.connectmentor.aplicacao.service.MentoradoService;
 import com.connectmentor.aplicacao.service.PretensaoService;
 
 @Controller
-@RequestMapping("/mentorado")
+@RequestMapping("/")
 public class MentoradoController {
 
 	// Injeção de depedências;
@@ -73,17 +72,22 @@ public class MentoradoController {
 	
 	
 	// Setando view no endpoint perfil mentorado;
-	@GetMapping("perfilMentorado")
-	public ModelAndView perfilMentorado() {
+	@GetMapping("perfilMentorado/{idMentorado}")
+	public ModelAndView perfilMentorado(@PathVariable Integer idMentorado) {
 
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("perfilmentorado");
 		return mv;
 	}
 	
-	@GetMapping("editarperfil")
-	public ModelAndView editarperfil() {
+	
+	
+	@GetMapping("editarperfil/{idMentorado}")
+	public ModelAndView editarperfil(@PathVariable Long idMentorado) {
 
+	mentoradoService.buscarIdMentorado(idMentorado);
+		
+		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("editarperfil");
 		return mv;
@@ -136,6 +140,39 @@ public class MentoradoController {
 		List<MentoradoPretensao> list = mentoradoPretensaoService.findAll();
 		return ResponseEntity.ok().body(list);
 		}
+	
+	//Método para logar o mentorado
+		 @GetMapping("/logarMentorado")
+		 public String logar(@RequestParam("email") String email, @RequestParam("senha") String senha) {
+			 
+			 Mentorado mentorado =  mentoradoService.buscarPorEmail(email);
+			
+			 if(mentorado == null) {
+				 
+				 return "redirect:/againLogin";
+			 }
+			 
+				if(!mentorado.getSenha().equals(senha)) {
+					return "redirect:/againLogin";
+				
+			}else {
+				
+				
+				return "redirect:/perfilMentorado/"+mentorado.getId();
+			}	 	
+		 }
+		 
+		
+		 @GetMapping("encontrarMentor")
+			public ModelAndView encontrarMentor() {
+
+				ModelAndView mv = new ModelAndView();
+				mv.setViewName("encontrarMentor");
+				return mv;
+			}
+	
+	
+	
 	
 	
 	

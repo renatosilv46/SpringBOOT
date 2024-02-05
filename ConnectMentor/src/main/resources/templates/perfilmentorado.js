@@ -1,5 +1,5 @@
 function redirectToAnotherPage() {
-    window.location.href = "mentorado/editarperfil";
+    window.location.href = "/editarperfil";
 }
 
 //Salvar Alterações

@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
    
 }
 body {
@@ -11,7 +13,7 @@ body {
     height: 100vh;
   
     --Rubik: "Rubik", cursive;
-   
+   background: url('../assets/fundo para o login.png') rgba(12, 12, 233, 0.3); /* Substitua pelo caminho da sua imagem */
    
 }
 
@@ -73,6 +75,11 @@ body {
 .description-second {
     color: #7f8c8d;
 }
+.description-third{
+	color: red;
+	margin-left: 18%;
+}
+
 .btn {
     border-radius: 15px;
     text-transform: uppercase;
